@@ -8,7 +8,7 @@ This build is the unified Supabase production build.
 - Supabase Auth replaces the old admin login/register API.
 - Supabase PostgreSQL is the single application database.
 - Supabase Realtime powers live inventory updates.
-- Visitors enter their details once per browser tab, then access the building and floor pages immediately. Their details are saved to Supabase and shown in the admin panel.
+- Visitors see the building overview first. Clicking a floor opens the entry form once per browser tab; after submission, they can open floor pages immediately. Their details are saved to Supabase and shown in the admin panel.
 - The Supabase inventory/status architecture is used for units and status categories.
 - Admin writes are protected with Supabase RLS and the `profiles.role = 'admin'` check.
 

@@ -249,11 +249,6 @@ async function showFloor() {
         return;
     }
 
-    if (popup) {
-        if (getSavedVisitor()) hideRegistration();
-        else showRegistration();
-    }
-
     try {
         await initializeDatabase();
         properties = await getProperties();

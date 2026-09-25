@@ -96,9 +96,15 @@ Object.keys(floorLinks).forEach(id => {
             window.requestFloorAccess(floorLinks[id]);
 
         } else {
-
-            window.location.href = floorLinks[id];
-
+            // The module may still be loading. Keep the selected floor and
+            // show the form instead of navigating past registration.
+            if (sessionStorage.getItem("registeredVisitor")) {
+                window.location.href = floorLinks[id];
+            } else {
+                sessionStorage.setItem("pendingFloorRedirect", floorLinks[id]);
+                const popup = document.getElementById("popup");
+                if (popup) popup.style.display = "flex";
+            }
         }
 
     });
