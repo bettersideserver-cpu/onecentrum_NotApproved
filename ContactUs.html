@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with One Centrum for project information, availability and site visits.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Contact Us | One Centrum</title>
+  <link rel="icon" href="./images/logo.png">
+  <link rel="stylesheet" href="./contact-us.css">
+  <script src="./js/contact-config.js" defer></script>
+  <script src="./js/contact-us.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="contact-header page-width">
+    <a class="contact-brand" href="./index.html" aria-label="One Centrum home">
+      <img src="./images/logo.png" alt="" width="48" height="48">
+      <span>ONE CENTRUM</span>
+    </a>
+    <nav class="contact-nav" aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a href="./ConstructionStatus.html">Construction Status</a>
+      <a href="./ContactUs.html" aria-current="page">Contact Us</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-width">
+    <div class="contact-layout">
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="eyebrow"><span aria-hidden="true"></span> WE’RE HERE TO HELP</p>
+        <h1 id="contact-title">A conversation.<br>A new <em>possibility.</em></h1>
+        <p class="intro-copy">Get in touch with One Centrum. Whether you have a question about the project or want to plan a visit, we’d love to hear from you.</p>
+
+        <div class="contact-details" aria-label="Contact details">
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z" /></svg>
+            </span>
+            <div><h2>Call us</h2><p id="contact-phone"><a href="tel:+918711987119">87119-87119</a></p></div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div><h2>Write to us</h2><p id="contact-email"><a href="mailto:hello@parasmanigroup.com">hello@parasmanigroup.com</a></p></div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <div><h2>Visit us</h2><p id="contact-address">1A, One Centrum<br>Ferozpur Road<br>Ludhiana</p><p id="contact-hours" class="detail-note" hidden></p><a id="contact-map" class="text-link" target="_blank" rel="noopener noreferrer" hidden>Get directions <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+            </span>
+            <div><h2>Our websites</h2><p id="contact-websites"><a href="https://www.onecentrum.com" target="_blank" rel="noopener noreferrer">www.onecentrum.com</a><br><a href="https://www.applesheight.com" target="_blank" rel="noopener noreferrer">www.applesheight.com</a></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="enquiry-card" aria-labelledby="enquiry-title">
+        <p class="eyebrow">CONTACT US</p>
+        <h2 id="enquiry-title">Let’s get in touch.</h2>
+        <p class="form-intro">Tell us a little about what you’re looking for.</p>
+
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="enquiry-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="enquiry-name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Your full name" required>
+          </div>
+          <div class="form-pair">
+            <div class="form-field">
+              <label for="enquiry-email">Email address <span aria-hidden="true">*</span></label>
+              <input id="enquiry-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+            </div>
+            <div class="form-field">
+              <label for="enquiry-phone">Phone <span class="optional">(optional)</span></label>
+              <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Your phone number">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="enquiry-interest">I’d like to know about</label>
+            <select id="enquiry-interest" name="interest">
+              <option>Project information</option>
+              <option>Availability and pricing</option>
+              <option>Scheduling a site visit</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="enquiry-message">Your message <span aria-hidden="true">*</span></label>
+            <textarea id="enquiry-message" name="message" rows="4" maxlength="1500" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button id="enquiry-submit" class="enquiry-submit" type="submit" disabled>Prepare email <span aria-hidden="true">↗</span></button>
+          <p id="enquiry-help" class="form-note">Our enquiry form will be available soon.</p>
+          <p id="enquiry-status" class="form-status" role="status" aria-live="polite"></p>
+          <noscript><p class="form-note">Please enable JavaScript to use this form, or contact us using the phone number or email address on this page.</p></noscript>
+        </form>
+      </section>
+    </div>
+
+    <section class="project-banner" aria-labelledby="visit-title">
+      <div class="project-image"><img src="./images/building-morning.jpg" alt="Architectural visualisation of One Centrum" loading="lazy"></div>
+      <div class="project-copy">
+        <p class="eyebrow">DISCOVER ONE CENTRUM</p>
+        <h2 id="visit-title">Your next chapter<br>starts with a closer look.</h2>
+        <p>Explore the project and find a space that feels right for you.</p>
+        <a class="text-link" href="./index.html">Explore the project <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact-footer page-width">
+    <span>ONE CENTRUM</span>
+    <a href="./index.html">Back to home <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+
+</html>
