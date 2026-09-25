@@ -1,0 +1,3 @@
+# Construction videos are hosted on YouTube. Keep local originals out of Git.
+/videos/*
+!/videos/README.md

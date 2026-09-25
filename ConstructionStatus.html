@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch construction updates and follow the progress of One Centrum.">
+  <title>Construction Status | One Centrum</title>
+  <link rel="stylesheet" href="./construction-status.css">
+  <script src="./js/construction-status.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="back-link" href="./index.html">
+      <span aria-hidden="true">&#8592;</span> Back to home
+    </a>
+    <a class="brand" href="./index.html" aria-label="One Centrum home">
+      <img src="./images/logo.png" alt="" width="42" height="42">
+      <span>ONE CENTRUM</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="page-heading" aria-labelledby="page-title">
+      <p class="eyebrow">PROJECT UPDATES</p>
+      <h1 id="page-title">Construction <span>Status</span></h1>
+      <p class="intro">Follow the progress, one update at a time.</p>
+    </section>
+
+    <section id="construction-updates" class="updates" aria-label="Construction videos">
+      <noscript><p class="empty-message">Please enable JavaScript to view construction updates.</p></noscript>
+    </section>
+  </main>
+
+  <template id="video-row-template">
+    <article class="video-row">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" hidden>
+          Your browser does not support video playback.
+        </video>
+        <div class="video-placeholder">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="5" y="10" width="21" height="20" rx="4" stroke="currentColor" stroke-width="1.5" />
+            <path d="M26 17L35 12V28L26 23" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+          <p class="video-message">Video coming soon</p>
+        </div>
+      </div>
+      <div class="video-details">
+        <p class="eyebrow">CONSTRUCTION UPDATE <span class="update-number"></span></p>
+        <h2 class="video-title"></h2>
+        <span class="title-rule" aria-hidden="true"></span>
+      </div>
+    </article>
+  </template>
+
+  <footer class="site-footer">ONE CENTRUM <span aria-hidden="true">/</span> Construction updates</footer>
+</body>
+
+</html>
